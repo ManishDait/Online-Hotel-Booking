@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Asset/hotel_image_background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+ul{ float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+
+}
+ul li a:hover{
+    background-color: white;
+    color:black;
+
+}
+ul li.active a{
+    background-color: white;
+    color:black;
+
+
+}
+.logo img{
+    float: left;
+    width: 120px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%,-50%);
+}
+.title h1{
+    color:red;
+    font-size: 70px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+    height: 300px;
+}
+form.txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding:  0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+    position: relative;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.txt_field input:focus~label,
+.txt_field input:valid~label{
+    top: -5px;
+    color: #2691d9;
+}
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before{
+    width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.class:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+.sign_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: red;
+}
+.sign_link a{
+    color: red;
+    text-decoration: none;
+}
+.sign_link a:hover{
+    text-decoration: underline;
+}
+.center button{
+    width: 30%;
+    background-color: orange;
+    transition: .6s;
+    border-radius: 35px;
+}
+.center button:hover{
+     border-color: yellow;
+     transition: .6s;
+}
+.login-page{
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+    
+}
+.form{
+    position: relative;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    border-radius: 10px;
+    padding: 45px;
+    text-align: center;
+}
+.form input{
+    font-family: 'Times New Roman', Times, serif;
+    outline: 1;
+    background: rgb(199, 212, 120);
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: black;
+}
+.form button{
+     font-family: "Roboto" ,sans-serif;
+     text-transform: uppercase;
+     outline: 0;
+     background: #d8900a;
+     border: 0;
+     width: 100px;
+     padding: 15px;
+     font-size: 14px;
+     cursor: pointer;
+}
+.form button:hover,.form button :active{
+    background: #adadad;
+}
+.contact{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 250px;
+    background: white;
+    border-radius: 10px;
+}
+.contact .content p{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .Contactinfo{
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+}
+.container .contactform{
+    
+}
+.login1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 300px;
+    background: white;
+    border-radius: 10px;
+}
+.login1 h1{
+    text-align: center;
+}

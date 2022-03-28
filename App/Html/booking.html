@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MAYUR HOTEL</title>
+    <link rel="stylesheet"  type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="main" >
+            <div class="logo">
+                <img src="../Asset/hotel_logo.png" >
+            </div>
+            <ul>
+                <li ><a href="../index.html">Home</a></li>
+                <li><a href="../Html/login.html">Login/Register</a></li>
+                <li class="active"><a href="../Html/singup.html">Services</a></li>
+                <li><a href="../Html/aboutus.html">About</a></li>
+                <li><a href="../Html/contact.html">Contact</a></li>
+            </ul>
+        </div>
+         <div class="center">
+             <h1>Services</h1>
+             <form action="/Html/thanks.html" method="POST">
+                <label for="rooms">Room type</label>
+                <select  id="rooms" name="rooms">
+                <option value="Norm">Normal</option>
+                <option value="Delu">Deluxe</option>
+                <option value="Super delu">Super deluxe</option>
+                <option value="Presendent suite">Presendential suite</option>
+                </select>
+                <br>
+                Location<input type="text" id="loc" name="loc">
+                <br>
+                Check-in<input type="date"  id="cin" name="cin">
+                <br>
+                Check-0ut <input type="date" id="cout" name="cout">
+                <br>
+               Name: <input type="text" name="price" id="price">
+               <br>
+               <div>
+               <h1>Features</h1>
+               Wifi<input type="checkbox" value="yes" name="wifi" >
+               <br>
+              Availablity: Ac<input type="radio" value="yes"  name="Ac">NonAc<input type="radio" value="no" name="Ac">
+              <br>
+              Bed:Singlebed<input type="radio" value="s" name="bed">Doublebed<input type="radio" value="d" name="bed">
+              <br>
+              Sea side view:<input type="checkbox" value="yes" name="view">
+              <br>
+            </div>
+            <div>
+                <button onclick="add_value()">Submit</button>
+                <script>
+                    function add_value(){
+                        alert("Your Booking is confirm")
+                    }
+                </script>
+            </div>
+                     
+         </div>
+       
+
+    </header>
+</body>
+</html>
